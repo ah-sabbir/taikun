@@ -20,7 +20,7 @@ const NavigationBar = () =>{
                 <div className="w-7/12">
                     <ul className="flex justify-center items-center text-white font-normal">
                         {
-                            navItems.map((item, i)=> (<li><Link href="#" className="text-[18px] p-2" >{item}</Link></li>))
+                            navItems.map((item, i)=> (<li key={i}><Link href="#" className="text-[18px] p-2" >{item}</Link></li>))
                         }
                     </ul>
                 </div>
