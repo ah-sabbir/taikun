@@ -11,6 +11,7 @@ import {
     Title,
     Tooltip,
     Legend,
+    ArcElement,
   } from 'chart.js';
   import { Bar } from 'react-chartjs-2';
 
@@ -21,7 +22,8 @@ import {
     BarElement,
     Title,
     Tooltip,
-    Legend
+    Legend,
+    ArcElement
   );
 
 
@@ -62,6 +64,3 @@ const ChartBar = ():JSX.Element=> {
 }
 
 export default ChartBar;
-
-
-
