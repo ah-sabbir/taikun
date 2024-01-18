@@ -27,6 +27,20 @@ import {
   );
 
 
+  export const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'right' as const,
+      },
+      title: {
+        display: true,
+        text: '',
+      },
+    },
+  };
+
+
 export const d = {
     responsive:true,
     labels: ['Success', 'Waiting', 'Failed', 'Updating'],
@@ -49,7 +63,7 @@ export const d = {
         // circumference: 180,
         cutout:'80%',
         borderRadius: 20,
-        padding: 10
+        padding: 10,
       },
     ],
   };
@@ -58,7 +72,7 @@ export const d = {
   
   
   const DoughnutChart = ():JSX.Element=>{
-    return <Doughnut data={d} className="p-5"/>;
+    return <Doughnut data={d} className="" width={250} height={250} options={options}/>;
   }
 
   export default DoughnutChart;

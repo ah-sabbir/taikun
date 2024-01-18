@@ -30,11 +30,11 @@ import {
   export const options = {
     responsive: true,
     plugins: {
-      legend: {
-        position: 'top' as const,
-      },
+      // legend: {
+      //   position: 'top' as const,
+      // },
       title: {
-        display: true,
+        display: false,
         text: '',
       },
     },
@@ -60,7 +60,7 @@ export const data = {
 
 const ChartBar = ():JSX.Element=> {
 
-  return <Bar width={300} height={300} className="p-5" options={options} data={data} />;
+  return <Bar width={250} height={250} className="" options={options} data={data} />;
 }
 
 export default ChartBar;
